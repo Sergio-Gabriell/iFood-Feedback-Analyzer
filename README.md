@@ -35,6 +35,7 @@ Engenharia: argparse para CLI robusta, chardet para resiliência de dados.
 1. Clone o repositório
 
 git clone https://github.com/Sergio-Gabriell/iFood-Feedback-Analyzer.git
+
 cd iFood-Feedback-Analyzer
 
 
