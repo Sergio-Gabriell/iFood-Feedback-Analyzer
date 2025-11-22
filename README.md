@@ -1,16 +1,16 @@
-🛵 iFood Feedback Analyzer
+# 🛵 iFood Feedback Analyzer
 
 Agente de Inteligência Artificial para gestão de reputação de restaurantes parceiros.
 
-🎯 O Problema
+# 🎯 O Problema
 
 Donos de restaurantes recebem dezenas de avaliações diariamente. Analisar cada uma, identificar problemas operacionais (como "comida fria" ou "atraso") e responder com empatia consome tempo valioso. Respostas genéricas ou a falta delas afetam a nota do estabelecimento.
 
-💡 A Solução
+# 💡 A Solução
 
 Desenvolvi um agente em Python que utiliza LLMs (Large Language Models) para automatizar a triagem e o atendimento. O sistema lê arquivos de dados brutos e entrega inteligência acionável.
 
-✨ Funcionalidades Principais
+# ✨ Funcionalidades Principais
 
 🧠 Análise de Sentimento com IA: Classifica automaticamente entre Positivo, Neutro ou Negativo.
 
@@ -20,7 +20,7 @@ Desenvolvi um agente em Python que utiliza LLMs (Large Language Models) para aut
 
 🛡️ Tratamento de Encoding: Detecta automaticamente se o arquivo de entrada é UTF-8 ou ISO-8859-1 (comum em Excel/Windows), evitando erros de caracteres.
 
-🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
 Linguagem: Python
 
@@ -30,7 +30,7 @@ Dados: Pandas & OpenPyXL
 
 Engenharia: argparse para CLI robusta, chardet para resiliência de dados.
 
-🚀 Como Executar
+# 🚀 Como Executar
 
 1. Clone o repositório
 
@@ -61,7 +61,7 @@ GEMINI_API_KEY=sua_chave_aqui_...
 python agent_gemini.py --input data/reviews_exemplo.csv --output data/results.csv --model gemini-pro
 
 
-📊 Exemplo de Resultado
+# 📊 Exemplo de Resultado
 
 Entrada (CSV):
 
@@ -81,7 +81,7 @@ Temperatura da comida, Atraso
 
 "Olá! Lamentamos muito que sua pizza tenha chegado fria e com atraso. Essa não é a experiência que queremos oferecer. Por favor, nos chame no chat para resolvermos isso."
 
-🤝 Contribuindo
+# 🤝 Contribuindo
 
 Sinta-se à vontade para abrir Issues ou PRs. Este projeto foi desenvolvido como parte de estudos focados em GenAI Applied to Business.
 
