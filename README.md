@@ -20,8 +20,6 @@ Desenvolvi um agente em Python que utiliza LLMs (Large Language Models) para aut
 
 🛡️ Tratamento de Encoding: Detecta automaticamente se o arquivo de entrada é UTF-8 ou ISO-8859-1 (comum em Excel/Windows), evitando erros de caracteres.
 
-📊 Exportação Híbrida: Gera CSV (para sistemas) e XLSX (Excel formatado para o dono do restaurante).
-
 🛠️ Tecnologias Utilizadas
 
 Linguagem: Python
@@ -36,8 +34,8 @@ Engenharia: argparse para CLI robusta, chardet para resiliência de dados.
 
 1. Clone o repositório
 
-git clone [https://github.com/Sergio-Gabriell/iFood-Partner-Feedback-Agent.git](https://github.com/Sergio-Gabriell/iFood-Partner-Feedback-Agent.git)
-cd iFood-Partner-Feedback-Agent
+git clone [https://github.com/Sergio-Gabriell/iFood-Feedback-Analyzer.git](https://github.com/Sergio-Gabriell/iFood-Feedback-Analyzer.git)
+cd iFood-Feedback-Analyzer
 
 
 2. Prepare o ambiente
