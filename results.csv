@@ -1,22 +1,4 @@
 review,sentimento,problemas,resposta_sugerida
-A pizza chegou fria e demorou muito. ,erro,erro,"```json
-{
- ""sentimento"": ""negativo"",
- ""problemas"": [""Temperatura inadequada"", ""Atraso na entrega""],
- ""resposta_sugerida"": ""Olá! Pedimos desculpas pela sua pizza ter chegado fria e pela demora. Agradecemos seu feedback e vamos trabalhar para que não aconteça novamente.""
-}
-```"
-"O entregador foi muito simpático, comida ótima!",erro,erro,"```json
-{
- ""sentimento"": ""positivo"",
- ""problemas"": [],
- ""resposta_sugerida"": ""Ficamos muito felizes que gostou da comida e do atendimento! Agradecemos seu feedback.""
-}
-```"
-"Faltou um item no meu pedido, quero reembolso.",erro,erro,"```json
-{
- ""sentimento"": ""negativo"",
- ""problemas"": [""item_faltando""],
- ""resposta_sugerida"": ""Olá! Pedimos desculpas pelo item faltante. Por favor, solicite o reembolso diretamente na central de ajuda do seu pedido.""
-}
-```"
+A pizza chegou fria e demorou muito. ,negativo,"Temperatura da comida, Tempo de entrega",Olá! Pedimos desculpas pela demora e por sua pizza ter chegado fria. Essa não é a experiência que queremos proporcionar. Gostaríamos muito de uma chance para corrigir isso.
+O entregador foi muito simpático,positivo,,Que ótimo saber! Agradecemos o seu feedback e vamos repassar o elogio ao entregador.
+Faltou um item no meu pedido,negativo,item_faltante,"Poxa, sentimos muito pelo item faltante. Por favor, entre em contato conosco para resolvermos isso o mais rápido possível."

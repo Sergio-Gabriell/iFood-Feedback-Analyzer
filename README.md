@@ -1,43 +1,91 @@
-# iFood Partner Feedback Agent (Gemini - PT-BR)
+🛵 iFood Feedback Analyzer
 
-Versão com backend Google Gemini (recomendado: `gemini-1.5-pro`).
+Agente de Inteligência Artificial para gestão de reputação de restaurantes parceiros.
 
-## Objetivo
-Agente protótipo que analisa avaliações de clientes, classifica sentimento, detecta problemas operacionais e gera respostas empáticas para parceiros (restaurantes).
+🎯 O Problema
 
-## Requisitos
-- Python 3.9+
-- Criar e ativar um ambiente virtual
-- Ter uma chave da API Gemini (gemini-1.5-pro) e definir na variável de ambiente `GEMINI_API_KEY`
+Donos de restaurantes recebem dezenas de avaliações diariamente. Analisar cada uma, identificar problemas operacionais (como "comida fria" ou "atraso") e responder com empatia consome tempo valioso. Respostas genéricas ou a falta delas afetam a nota do estabelecimento.
 
-## Instalação
-```bash
+💡 A Solução
+
+Desenvolvi um agente em Python que utiliza LLMs (Large Language Models) para automatizar a triagem e o atendimento. O sistema lê arquivos de dados brutos e entrega inteligência acionável.
+
+✨ Funcionalidades Principais
+
+🧠 Análise de Sentimento com IA: Classifica automaticamente entre Positivo, Neutro ou Negativo.
+
+🔍 Detecção de Tópicos: Extrai a causa raiz do feedback (ex: "Sabor", "Embalagem", "Tempo de Entrega").
+
+✍️ Sugestão de Resposta Humanizada: Gera uma minuta de resposta empática, com "sotaque brasileiro", pronta para ser enviada.
+
+🛡️ Tratamento de Encoding: Detecta automaticamente se o arquivo de entrada é UTF-8 ou ISO-8859-1 (comum em Excel/Windows), evitando erros de caracteres.
+
+📊 Exportação Híbrida: Gera CSV (para sistemas) e XLSX (Excel formatado para o dono do restaurante).
+
+🛠️ Tecnologias Utilizadas
+
+Linguagem: Python
+
+IA Engine: Google Gemini (Generative AI)
+
+Dados: Pandas & OpenPyXL
+
+Engenharia: argparse para CLI robusta, chardet para resiliência de dados.
+
+🚀 Como Executar
+
+1. Clone o repositório
+
+git clone [https://github.com/Sergio-Gabriell/iFood-Partner-Feedback-Agent.git](https://github.com/Sergio-Gabriell/iFood-Partner-Feedback-Agent.git)
+cd iFood-Partner-Feedback-Agent
+
+
+2. Prepare o ambiente
+
 python -m venv venv
-# Windows PowerShell
-venv\Scripts\Activate.ps1
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
 pip install -r requirements.txt
-```
 
-## Definir a chave (PowerShell)
-```powershell
-$env:GEMINI_API_KEY="sua_chave_aqui"
-```
 
-## Executar
-```bash
-python agent_gemini.py --input reviews.csv --output results.csv --model gemini-1.5-pro
-```
+3. Configure a API Key
 
-## Resultado
-O arquivo `results.csv` será gerado com colunas:
-- review
-- sentiment
-- issue_tags
-- suggested_response
+Crie um arquivo .env na raiz do projeto e adicione sua chave do Google AI Studio:
 
-## Próximos passos sugeridos
-- Implementar UI com Streamlit
-- Adicionar avaliação automatizada (LLMOps)
-- Deploy como API com FastAPI
-- Adicionar testes unitários e CI
+GEMINI_API_KEY=sua_chave_aqui_...
 
+
+4. Execute o Agente
+
+python agent_gemini.py --input data/reviews_exemplo.csv --output data/results.csv --model gemini-pro
+
+
+📊 Exemplo de Resultado
+
+Entrada (CSV):
+
+"A pizza chegou fria e demorou muito."
+
+Saída do Agente (XLSX/CSV):
+
+Sentimento
+
+Problemas Identificados
+
+Sugestão de Resposta
+
+🔴 Negativo
+
+Temperatura da comida, Atraso
+
+"Olá! Lamentamos muito que sua pizza tenha chegado fria e com atraso. Essa não é a experiência que queremos oferecer. Por favor, nos chame no chat para resolvermos isso."
+
+🤝 Contribuindo
+
+Sinta-se à vontade para abrir Issues ou PRs. Este projeto foi desenvolvido como parte de estudos focados em GenAI Applied to Business.
+
+Desenvolvido por Gabriel de Souza 🚀
+LinkedIn
