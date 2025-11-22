@@ -86,4 +86,3 @@ Temperatura da comida, Atraso
 Sinta-se à vontade para abrir Issues ou PRs. Este projeto foi desenvolvido como parte de estudos focados em GenAI Applied to Business.
 
 Desenvolvido por Gabriel de Souza 🚀
-LinkedIn
