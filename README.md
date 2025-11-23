@@ -34,39 +34,38 @@ Engenharia: argparse para CLI robusta, chardet para resiliência de dados.
 
 # 🚀 Como Executar
 
-1. Clone o repositório
+## 1. Clone o repositório
 
-git clone [https://github.com/Sergio-Gabriell/iFood-Feedback-Analyzer.git](https://github.com/Sergio-Gabriell/iFood-Feedback-Analyzer.git)
+```bash
+git clone https://github.com/Sergio-Gabriell/iFood-Feedback-Analyzer.git
+```
+
 cd iFood-Feedback-Analyzer
 
-
 2. Prepare o ambiente
-
-# Criar ambiente virtual
+```bash
+Copiar código
 python -m venv venv
+```
 
-# Ativar ambiente (Windows)
+# Windows:
 venv\Scripts\activate
-# Ativar ambiente (Linux/Mac)
+
+# Linux/Mac:
 source venv/bin/activate
 
-# Instalar dependências
 pip install -r requirements.txt
-
-
 3. Configure a API Key
+Crie o arquivo .env na raiz do projeto:
 
-Crie um arquivo .env na raiz do projeto e adicione sua chave do Google AI Studio:
+Copiar código
+GEMINI_API_KEY=sua_chave_aqui
 
-GEMINI_API_KEY=sua_chave_aqui_...
-
-
-(Nota: O arquivo .env não deve ser commitado. Use o .env.example como base.)
-
-4. Execute o Agente
-
+4. Execute o agente
+```bash
+Copiar código
 python agent_gemini.py --input data/reviews_exemplo.csv --output data/results.csv --model gemini-pro
-
+```
 
 📊 Exemplo de Resultado
 
