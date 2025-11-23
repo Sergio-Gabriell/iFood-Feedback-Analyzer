@@ -66,37 +66,27 @@ GEMINI_API_KEY=sua_chave_aqui
 python agent_gemini.py --input data/reviews_exemplo.csv --output data/results.csv --model gemini-pro
 ```
 
-📊 Exemplo de Resultado
+# 📊 Exemplo de Resultado
 
-Entrada (CSV):
+### **Entrada (CSV):**
 
 "A pizza chegou fria e demorou muito."
 
-Saída do Agente (XLSX/CSV):
+yaml
 
-Sentimento
+### **Saída do Agente (CSV/XLSX):**
 
-Problemas Identificados
+| Sentimento | Problemas Identificados              | Sugestão de Resposta                                                                                 |
+|-----------|----------------------------------------|--------------------------------------------------------------------------------------------------------|
+| 🔴 Negativo | Temperatura da comida, Atraso         | "Olá! Lamentamos muito que sua pizza tenha chegado fria e com atraso. Essa não é a experiência que queremos oferecer. Por favor, nos chame no chat para resolvermos isso." |
 
-Sugestão de Resposta
+---
 
-🔴 Negativo
+# 🤝 Contribuindo
 
-Temperatura da comida, Atraso
+Sinta-se à vontade para abrir *Issues* ou enviar *PRs*.  
+Este projeto foi desenvolvido como parte de estudos focados em **GenAI aplicada a negócios**.
 
-"Olá! Lamentamos muito que sua pizza tenha chegado fria e com atraso. Essa não é a experiência que queremos oferecer. Por favor, nos chame no chat para resolvermos isso."
+**Desenvolvido por Gabriel de Souza 🚀**
 
-🤝 Contribuindo
-
-Sinta-se à vontade para abrir Issues ou Pull Requests. Este projeto foi desenvolvido como parte de estudos focados em GenAI Applied to Business e automação de processos.
-
-<div align="center">
-Desenvolvido por <b>Gabriel de Souza</b> 🚀
-
-
-
-
-
-<a href="https://www.linkedin.com/in/sergio-gabriel-de-souza/">
-</a>
-</div>
+[🔗 LinkedIn](https://www.linkedin.com/in/sergio-gabriel-de-souza/)
