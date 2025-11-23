@@ -43,8 +43,8 @@ git clone https://github.com/Sergio-Gabriell/iFood-Feedback-Analyzer.git
 cd iFood-Feedback-Analyzer
 
 2. Prepare o ambiente
+
 ```bash
-Copiar código
 python -m venv venv
 ```
 
@@ -63,7 +63,6 @@ GEMINI_API_KEY=sua_chave_aqui
 
 4. Execute o agente
 ```bash
-Copiar código
 python agent_gemini.py --input data/reviews_exemplo.csv --output data/results.csv --model gemini-pro
 ```
 
